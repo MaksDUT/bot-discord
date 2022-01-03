@@ -18,4 +18,4 @@ intents = discord.Intents.default()
 intents.members = True
 
 client = MyClient(intents=intents)
-client.run('OTI3NjE3MDY4MzUyODA2OTkz.YdM0tw.zUuGVtWzL2yYVaKPpxThAAfZpxU')
+client.run(TOKEN)
