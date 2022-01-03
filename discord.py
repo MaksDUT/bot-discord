@@ -1,7 +1,7 @@
 # This example requires the 'members' privileged intents
 
 import discord
-
+import os
 TOKEN = os.environ['TOKEN']
 
 class MyClient(discord.Client):
