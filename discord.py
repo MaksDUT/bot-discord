@@ -1,6 +1,9 @@
 # This example requires the 'members' privileged intents
 
 import discord
+from boto.s3.connection import S3Connection
+TOKEN = S3Connection(os.environ['TOKEN'])
+
 
 class MyClient(discord.Client):
     async def on_ready(self):
