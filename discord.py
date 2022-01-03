@@ -2,7 +2,7 @@
 
 import discord
 import os
-TOKEN = os.environ['TOKEN']
+token = os.environ['TOKEN']
 
 class MyClient(discord.Client):
     async def on_ready(self):
@@ -15,8 +15,9 @@ class MyClient(discord.Client):
             to_send = f'Welcome {member.mention} to {guild.name}!'
             await guild.system_channel.send(to_send)
 
+
 intents = discord.Intents.default()
 intents.members = True
 
 client = MyClient(intents=intents)
-client.run(TOKEN)
+client.run(token)
